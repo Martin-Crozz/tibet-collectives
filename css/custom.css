@@ -170,7 +170,6 @@ a {
 }
 
 a:hover {
-
 	text-decoration: underline
 }
 
@@ -1042,7 +1041,6 @@ fieldset:disabled a.btn {
 	position: static;
 	float: none
 }
-
 
 .card {
 	position: relative;
@@ -4013,7 +4011,6 @@ ol {
 .inner-header {
 	padding: 25px 0;
 }
-
 
 .inner-header .logo a {
 	display: inline-block
@@ -7871,7 +7868,6 @@ ol {
 		padding-right: 15px
 	}
 }
-
 
 /* Responsive */
 @media (max-width: 1400px) {

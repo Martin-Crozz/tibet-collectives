@@ -1,17 +1,12 @@
-
 'use strict';
-
 (function ($) {
-
     /*------------------
         Preloader
     --------------------*/
     $(window).on('load', function () {
         $(".loader").fadeOut();
         $("#preloder").delay(200).fadeOut("slow");
-        $(window).scrollTop(0);
     });
-
     /*------------------
         Background Set
     --------------------*/
@@ -19,7 +14,6 @@
         var bg = $(this).data('setbg');
         $(this).css('background-image', 'url(' + bg + ')');
     });
-
     /*------------------
 		Navigation
 	--------------------*/
@@ -27,7 +21,6 @@
         prependTo: '#mobile-menu-wrap',
         allowParentLinks: true
     });
-
     /*------------------
         Hero Slider
     --------------------*/
@@ -44,7 +37,6 @@
         autoHeight: false,
         autoplay: true,
     });
-
     /*------------------
         Product Slider
     --------------------*/
@@ -73,7 +65,6 @@
             }
         }
     });
-
     /*------------------
        logo Carousel
     --------------------*/
@@ -97,7 +88,6 @@
             }
         }
     });
-
     /*-----------------------
        Product Single Slider
     -------------------------*/
@@ -112,7 +102,6 @@
         autoHeight: false,
         autoplay: true,
     });
-    
     /*------------------
         CountDown
     --------------------*/
@@ -121,7 +110,6 @@
     var dd = String(today.getDate()).padStart(2, '0');
     var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
     var yyyy = today.getFullYear();
-
     if(mm == 12) {
         mm = '01';
         yyyy = yyyy + 1;
@@ -131,18 +119,12 @@
     }
     var timerdate = mm + '/' + dd + '/' + yyyy;
     // For demo preview end
-
     console.log(timerdate);
-    
-
     // Use this for real timer date
     /* var timerdate = "2020/01/01"; */
-
 	$("#countdown").countdown(timerdate, function(event) {
         $(this).html(event.strftime("<div class='cd-item'><span>%D</span> <p>Days</p> </div>" + "<div class='cd-item'><span>%H</span> <p>Hrs</p> </div>" + "<div class='cd-item'><span>%M</span> <p>Mins</p> </div>" + "<div class='cd-item'><span>%S</span> <p>Secs</p> </div>"));
     });
-
-        
     /*----------------------------------------------------
      Language Flag js 
     ----------------------------------------------------*/
@@ -154,7 +136,6 @@
             if(val!="")
                 window.location = val;
         }}}).data("dd");
-
         var pagename = document.location.pathname.toString();
         pagename = pagename.split("/");
         pages.setIndexByValue(pagename[pagename.length-1]);
@@ -163,7 +144,6 @@
         // console.log(e);
     }
     $("#ver").html(msBeautify.version.msDropdown);
-
     //convert
     $(".language_drop").msDropdown({roundedBorder:false});
         $("#tech").data("dd");
@@ -188,7 +168,6 @@
 	});
 	minamount.val('$' + rangeSlider.slider("values", 0));
     maxamount.val('$' + rangeSlider.slider("values", 1));
-
     /*-------------------
 		Radio Btn
 	--------------------- */
@@ -196,12 +175,10 @@
         $(".fw-size-choose .sc-item label, .pd-size-choose .sc-item label").removeClass('active');
         $(this).addClass('active');
     });
-    
     /*-------------------
 		Nice Select
     --------------------- */
     $('.sorting, .p-show').niceSelect();
-
     /*------------------
 		Single Product
 	--------------------*/
@@ -215,9 +192,7 @@
 			$('.zoomImg').attr({src: imgurl});
 		}
 	});
-
     $('.product-pic-zoom').zoom();
-    
     /*-------------------
 		Quantity change
 	--------------------- */
@@ -239,5 +214,10 @@
 		}
 		$button.parent().find('input').val(newVal);
 	});
-
 })(jQuery);
+// Page Scroll Top on Refresh
+$(window).on('beforeunload', function() {
+    $('body').hide();
+    $(window).scrollTop(0);
+  });
+// Page Scroll Top on Refresh Ends
