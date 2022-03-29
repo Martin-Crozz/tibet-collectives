@@ -253,79 +253,70 @@
         </div>
     </section>
     <!--======================================================= ORDER TOP LIST END ======-->
-    <section class="shopping-cart spad">
+    <!--======================================================= CART START ======-->
+    <section id="cart_user" class="py-5">
         <div class="container">
-            <div class="row ">
-                <div class="col-xl-12 col-12 m-auto">
-                    <div class="cart-table table-responsive-xl">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Image</th>
-                                    <th class="p-name">Product Name</th>
-                                    <th>Price</th>
-                                    <th>Quantity</th>
-                                    <th>Total</th>
-                                    <th><i class="ti-close"></i></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="cart-pic first-row"><img
-                                            src="img/cart-page/xproduct-1.jpg.pagespeed.ic.W9n_F9KPaD.jpg" alt=""></td>
-                                    <td class="cart-title first-row">
-                                        <h5>Pure Pineapple</h5>
-                                    </td>
-                                    <td class="p-price first-row">$60.00</td>
-                                    <td class="qua-col first-row">
-                                        <div class="quantity">
-                                            <div class="pro-qty">
-                                                <input type="text" value="1">
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="total-price first-row">$60.00</td>
-                                    <td class="close-td first-row"><i class="ti-close"></i></td>
-                                </tr>
-                                <tr>
-                                    <td class="cart-pic"><img
-                                            src="img/cart-page/xproduct-2.jpg.pagespeed.ic.Akxx72o0SN.jpg" alt=""></td>
-                                    <td class="cart-title">
-                                        <h5>American lobster</h5>
-                                    </td>
-                                    <td class="p-price">$60.00</td>
-                                    <td class="qua-col">
-                                        <div class="quantity">
-                                            <div class="pro-qty">
-                                                <input type="text" value="1">
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="total-price">$60.00</td>
-                                    <td class="close-td"><i class="ti-close"></i></td>
-                                </tr>
-                                <tr>
-                                    <td class="cart-pic"><img
-                                            src="img/cart-page/xproduct-3.jpg.pagespeed.ic.SVKwYryXPo.jpg" alt=""></td>
-                                    <td class="cart-title">
-                                        <h5>Guangzhou sweater</h5>
-                                    </td>
-                                    <td class="p-price">$60.00</td>
-                                    <td class="qua-col">
-                                        <div class="quantity">
-                                            <div class="pro-qty">
-                                                <input type="text" value="1">
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="total-price">$60.00</td>
-                                    <td class="close-td"><i class="ti-close"></i></td>
-                                </tr>
-                            </tbody>
-                        </table>
+            <div class="row">
+                <div class="col-xl-8 col-md-12">
+                    <div class="row" id="shipping">
+                        <div class="col-md-6">
+                            <label class="active card bg-white p-3 ">
+                                <input name="plan" class="radio" type="radio" checked="">
+                                <span class="plan-details">
+                                    <span class="plan-type d-block">Address: <span class="right_bold">Tinkune,
+                                            kathmandu</span> </span>
+                                    <span class="plan-type d-block">Postal Code: <span>44600</span> </span>
+                                    <span class="plan-type d-block">City:<span class="right_bold">Kathmandu</span>
+                                    </span>
+                                    <span class="plan-type d-block">Country: <span class="right_bold">Nepal</span>
+                                    </span>
+                                    <span class="plan-type d-block">Phone: <span class="right_bold">+977
+                                            9801881588</span> </span>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="card bg-white p-3">
+                                <input name="plan" class="radio" type="radio" checked="">
+                                <span class="plan-details">
+                                    <span class="plan-type d-block">Address: <span class="right_bold">Tinkune,
+                                            kathmandu</span> </span>
+                                    <span class="plan-type d-block">Postal Code: <span>44600</span> </span>
+                                    <span class="plan-type d-block">City:<span class="right_bold">Kathmandu</span>
+                                    </span>
+                                    <span class="plan-type d-block">Country: <span class="right_bold">Nepal</span>
+                                    </span>
+                                    <span class="plan-type d-block">Phone: <span class="right_bold">+977
+                                            9801881588</span> </span>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="card bg-white p-3">
+                                <input name="plan" class="radio" type="radio" checked="">
+                                <span class="plan-details">
+                                    <span class="plan-type d-block">Address: <span class="right_bold">Tinkune,
+                                            kathmandu</span> </span>
+                                    <span class="plan-type d-block">Postal Code: <span>44600</span> </span>
+                                    <span class="plan-type d-block">City:<span class="right_bold">Kathmandu</span>
+                                    </span>
+                                    <span class="plan-type d-block">Country: <span class="right_bold">Nepal</span>
+                                    </span>
+                                    <span class="plan-type d-block">Phone: <span class="right_bold">+977
+                                            9801881588</span> </span>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="col-md-6">
+                            <button type="button" class="btn add_btn_img" data-toggle="modal"
+                                data-target="#spipping_add">
+                                <img src="https://image.flaticon.com/icons/png/512/1104/1104261.png" alt=""
+                                    class="img-fluid">
+                            </button>
+                        </div>
                     </div>
                     <div class="row justify-content-center mt-2">
-                        <div class="col-12 mb-3">
+                        <div class="col-md-8 col-12 mb-3">
                             <div
                                 class="button_block d-flex justify-content-around align-items-center flex-wrap mb-4 mb-md-0">
                                 <a href="" class="my-2"> <span><i class="fa fa-reply-all"></i></span> Return to shop</a>
@@ -336,7 +327,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-12 m-auto">
+                <div class="col-xl-4 col-md-12 m-auto m-xl-0">
                     <div class="proceed-checkout">
                         <ul>
                             <li class="subtotal">Subtotal <span>$240.00</span></li>
@@ -348,6 +339,7 @@
             </div>
         </div>
     </section>
+    <!--======================================================= CART END ======-->
     <footer class="footer-section">
         <div class="container">
             <div class="row">
